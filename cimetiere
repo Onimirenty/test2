@@ -1,0 +1,68 @@
+File file=FileChooser.YgetFile();
+                                Sender2 huhu=new Sender2();
+                                out.print(huhu.getParser().FileToByte(file));
+
+
+                                // /Receiver2 apres if(code.equalsIgnoreCase(msg1)) 
+                                
+                                String msg2=msgn[1];
+                                        System.out.println(msg1+"<=msg1,msg2=>"+msg2);
+                                        byte[] g=msg2.getBytes();
+                                        //transforme les bytes code en fichier avec une destinnation D:/
+                                        FileParser fl=new FileParser();
+                                        // fl.fileParser("/media/mirenty/mirentech_OTG/Aprotos",g);
+                                        fl.copierFichier("F:/Aprotos/");
+
+                                        for (int j = 0; j < bite.length; j++) {
+                                            // bite[j]=nini[j].getBytes();
+                                        }
+                        
+                                        // for (byte b : bite) {
+                                        //     System.out.println(bite.length);
+                                            
+                                        // }
+                                        // System.out.println("\n array to string ====================>");
+                                        // System.out.println();
+                                        
+                                        //     System.out.println(bytecode.length());
+                                        //     System.out.println(Arrays.toString(bite).length());
+                        
+                                        // System.out.println();
+                                        // System.out.println();
+                                        // System.out.println("\n  <=================== array to string");
+                                        
+                                            Path path =Paths.get(nvChemin);
+                        
+                        
+                                    //fonction
+                        
+
+
+
+                                    
+                                        
+                                    byte[] bite=huhu.getParser().FileToByte(file);
+                                    // out.print("send,,"+file.getName()+",,"+huhu.getParser().FileToByte(file));
+                                    
+                                    // System.out.println("\n array to string ====================>");
+                                    // System.out.println();
+                                    for (int i = 0; i < bite.length; i++) {
+                                        System.out.println(bite[i]);;
+                                        mms=mms+bite[i];
+
+                                    }
+                                    // System.out.println(mms);
+
+                                    out.print("send,,"+file.getName()+",,"+mms);
+                                    out.println();
+                                    out.println();
+                                        // System.out.println(Arrays.toString(bite).length());
+                    
+                                    // System.out.println();
+                                    // System.out.println();
+                                    // System.out.println("\n  <=================== array to string");
+                                    
+                                    // System.out.println();
+
+
+                                    
